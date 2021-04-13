@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA CALCULATOR</title>
+</head>
+<body>
+    <h1>Calculate Your CGPA here</h1>
+    <div>
+        <label>Name</label>
+        <input id="name" type="text" name = "name">
+        <br>
+        <label>Department</label>
+        <input id="department" type="text" name="department">
+    </div>
+    <br /> <br /> <br />
+   
+    <div id="container">
+        <div id="firstTable">
+            <table id="fillTable">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Points</th>
+                        <th>Score</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="course" name="course"> </td>
+                        <td><input type="number" id="points" name="points"> </td>
+                        <td><input type="number" id="score" name="score" min="0" max="100"> </td>
+                        <td><input type="number" id="total" name="total"> </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br /> <br />
+            <input id="submit_button" type="button" name="submit" value="submit">
+           
+        </div>
+        <br /> <br /> <br />
+
+        <div id="showcase">
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Points</th>
+                        <th>Score</th>
+                        <th>Total</th>                        
+                    </tr>
+
+                </thead>
+                <tbody id="dataInput">
+                
+                </tbody>
+            </table>
+          
+        </div>
+
+    </div>
+    <br>
+    <input id="calculate" type="button" name="calculate" value="calculate">
+    <br>
+    <div id="result"></div>
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
